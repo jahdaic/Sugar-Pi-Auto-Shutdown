@@ -8,6 +8,8 @@ python 3.5+
 Installation
 ```
 pip3 install pisugar
+git clone https://github.com/jahdaic/Sugar-Pi-Auto-Shutdown.git
+printf "\npython autoshutdown.py &" >> ~/.bashrc
 ```
 
 Run the script
@@ -21,9 +23,9 @@ python autoshutdown.py &
 ```
 
 ## Supported Parameters
-| parameter | type   | example                               |
-|------------------------------------------------------------|
-| --timeout | number | `python autoshutdown.py --timeout=60` |
+| parameter     | type   | example                               |
+|---------------|--------|---------------------------------------|
+| **--timeout** | number | `python autoshutdown.py --timeout=60` |
 
 ## License
 See [License](https://github.com/jahdaic/Sugar-Pi-Auto-Shutdown/blob/master/LICENSE).
