@@ -13,13 +13,13 @@ while True:
 
 	if power and disconnected_time:
 		disconnected_time = 0
-		print('Power Reconnected')
+		# print('Power Reconnected')
 
 	if not power and not disconnected_time:
 		disconnected_time = time.time()
-		print('Power Disconnected')
+		# print('Power Disconnected')
 
 	if disconnected_time and time.time() - disconnected_time >= 30:
 		os.system('sudo shutdown now')
 
-	time.sleep(1)
+	time.sleep(10)
